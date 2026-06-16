@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+Codex.local.md
+.DS_Store
