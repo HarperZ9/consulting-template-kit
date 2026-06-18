@@ -1,6 +1,13 @@
-# consulting-template-kit
+# Consulting Template Kit
 
-Public-safe templates for small consulting, documentation, and software-service work.
+> Public-safe consulting & technical-writing templates: document kits and process scaffolds.
+
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![python](https://img.shields.io/badge/python-3.11%2B-blue.svg)
+![version](https://img.shields.io/badge/version-0.1.0-informational.svg)
+[![CI](https://github.com/HarperZ9/consulting-template-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/HarperZ9/consulting-template-kit/actions/workflows/ci.yml)
+![deps: none](https://img.shields.io/badge/deps-none-success.svg)
+[![part of: AI-accountability toolkit](https://img.shields.io/badge/part_of-AI--accountability_toolkit-7a5cff.svg)](https://harperz9.github.io)
 
 The kit is intentionally plain: statement of work, engagement letter, invoice,
 proposal email, project brief, and technical-writing cover letter templates.
@@ -49,3 +56,8 @@ starter documents for scoping, communication, and operational hygiene.
 
 Do not publish filled versions that contain client names, payment details,
 private rates, addresses, or signed terms.
+
+---
+**Zain Dana Harper** — small tools with explicit edges.
+[Portfolio](https://harperz9.github.io) · [HarperZ9](https://github.com/HarperZ9)
+<sub>Built with Claude Code; reviewed, tested, and owned by me.</sub>
