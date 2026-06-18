@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "consulting-template-kit"
 version = "0.1.0"
-description = "Public-safe consulting and technical-writing templates with a lightweight release gate."
+description = "Public-safe consulting & technical-writing templates: document kits and process scaffolds."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
