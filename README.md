@@ -23,7 +23,8 @@ is reused or published.
 - `templates/technical-writing-cover-letter.md`
 - `templates/project-brief.md`
 - `examples/example-project-brief.md`
-- `scripts/validate_templates.py`
+- `src/consulting_template_kit/validator.py` (the installable package and `ctk-validate` console script)
+- `scripts/validate_templates.py` (no-install wrapper around the package)
 
 ## Quick Start
 
@@ -48,6 +49,10 @@ the finished draft before sending it.
 ```powershell
 ctk-validate templates examples
 ```
+
+A clean run prints nothing and exits `0`; findings are printed one per line and
+exit `1`. See [USAGE.md](USAGE.md) for the full command-line reference, the
+finding codes, the Python API, and worked examples.
 
 ## Boundaries
 
