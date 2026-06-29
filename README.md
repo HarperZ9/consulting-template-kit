@@ -1,5 +1,41 @@
 # Consulting Template Kit
 
+![Consulting Template Kit hero](docs/brand/consulting-template-kit-hero.png)
+
+> Ship reusable consulting and technical-writing documents with a validator before reuse.
+
+Consulting Template Kit packages public-safe statements of work, engagement
+letters, invoices, project briefs, proposal emails, and technical-writing
+templates. It also includes a validator that catches placeholders, private data
+shapes, and release mistakes before a template is sent or published.
+
+## Why it matters
+
+Client-facing documents should be clear, reusable, and scrubbed before delivery.
+This repo gives developers and consultants a small template library with a
+repeatable validation receipt instead of ad hoc copy/paste checks.
+
+## Try it
+
+```powershell
+python -m pip install -e .
+python scripts/validate_templates.py templates examples
+python -m pytest
+```
+
+## What to test first
+
+- Run the validator over `templates/` and `examples/`.
+- Copy one template and keep bracketed placeholders until final fill-in.
+- Run `ctk-validate templates examples` after editable install.
+
+## Current status
+
+Python package and CLI with public-safe templates, examples, and tests. These are
+starter documents, not legal, tax, accounting, or compliance advice.
+
+## Existing technical notes
+
 > Public-safe consulting & technical-writing templates: document kits and process scaffolds.
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
