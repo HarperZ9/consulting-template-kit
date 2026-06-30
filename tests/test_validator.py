@@ -10,7 +10,8 @@ def test_templates_pass_public_gate() -> None:
 
 def test_secret_shaped_text_is_flagged(tmp_path: Path) -> None:
     sample = tmp_path / "bad.md"
-    sample.write_text("# Bad\n\nToken: sk-abcdefghijklmnopqrstuvwxyz\n", encoding="utf-8")
+    fake_key = "sk-" + "abcdefghijklmnopqrstuvwxyz"
+    sample.write_text(f"# Bad\n\nToken: {fake_key}\n", encoding="utf-8")
     findings = validate_paths([sample])
     assert any(finding.code == "secret-shape" for finding in findings)
 

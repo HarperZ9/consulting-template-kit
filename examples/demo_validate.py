@@ -1,4 +1,4 @@
-"""Best-effort demo — not runtime-verified by author.
+"""Best-effort demo -- not runtime-verified by author.
 
 End-to-end demonstration of the consulting-template-kit validator using only
 the package's public API: ``validate_paths`` and the ``Finding`` dataclass
@@ -44,11 +44,12 @@ def main() -> int:
     # 2. Validate a deliberately unsafe draft to show each finding code. The
     #    file has no bracketed placeholders, a client-data line, and a
     #    secret-shaped token line.
+    fake_key = "sk-" + "abcdefghijklmnopqrstuvwx"
     bad_text = (
         "# Draft SOW\n"
         "\n"
         "Client Name: Acme Robotics\n"
-        "Token: sk-abcdefghijklmnopqrstuvwx\n"
+        f"Token: {fake_key}\n"
     )
     with tempfile.TemporaryDirectory() as tmp:
         draft = Path(tmp) / "draft.md"

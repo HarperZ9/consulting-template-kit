@@ -82,7 +82,7 @@ Given a file `draft.md`:
 # Draft SOW
 
 Client Name: Acme Robotics
-Token: sk-abcdefghijklmnopqrstuvwx
+Token: <redacted API key>
 ```
 
 Run:
@@ -91,7 +91,7 @@ Run:
 ctk-validate draft.md
 ```
 
-Expected output (illustrative — paths shown as `draft.md`; the validator prints
+Expected output (illustrative -- paths shown as `draft.md`; the validator prints
 the path exactly as you passed it):
 
 ```
@@ -101,8 +101,8 @@ draft.md:4: secret-shape: remove secret or payment-account wording
 draft.md:4: secret-shape: remove secret or payment-account wording
 ```
 
-Exit code: `1`. (Line 4 matches twice: once on the `token` keyword and once on
-the `sk-...` key shape.)
+Exit code: `1`. (Line 4 matches the `token` keyword. A real key-shaped value is
+also flagged, but examples should not publish key-shaped strings.)
 
 ### 3. Validate a single directory
 
@@ -148,5 +148,5 @@ ctk-validate path/to/your-draft.md
 ```
 
 A clean exit (code `0`, no output) means none of the leak heuristics fired. The
-validator is a pre-publication safety net, not a guarantee — review filled
+validator is a pre-publication safety net, not a guarantee -- review filled
 documents by hand as well.
