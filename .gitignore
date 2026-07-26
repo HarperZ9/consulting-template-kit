@@ -10,3 +10,6 @@ __pycache__/
 *.py[cod]
 Codex.local.md
 .DS_Store
+
+# Local-only Claude instructions (global standard: never commit)
+CLAUDE.local.md
