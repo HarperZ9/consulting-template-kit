@@ -1,10 +1,19 @@
-<p align="center"><img src=".github/assets/banner.png" alt="consulting-template-kit" width="100%"></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HarperZ9/consulting-template-kit/main/docs/art/hero-dark.svg">
+  <img src="https://raw.githubusercontent.com/HarperZ9/consulting-template-kit/main/docs/art/hero-light.svg" alt="consulting-template-kit: Reusable consulting templates with a validator for private data. A fan of ruled sheets drawn in fine lines, the top sheet lit by a bright core." width="100%">
+</picture>
 
-# Consulting Template Kit
+# consulting-template-kit
 
-![Consulting Template Kit hero](docs/brand/consulting-template-kit-hero.png)
+Reusable consulting templates with a validator for private data.
 
-> Ship reusable consulting and technical-writing documents with a validator before reuse.
+```
+python -m pip install -e .
+```
+
+[![CI](https://github.com/HarperZ9/consulting-template-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/HarperZ9/consulting-template-kit/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-MIT-e6e1d6?style=flat-square&labelColor=1a1712)](https://github.com/HarperZ9/consulting-template-kit/blob/main/LICENSE)
+![python 3.9+](https://img.shields.io/badge/python-3.9%2B-e6e1d6?style=flat-square&labelColor=1a1712)
 
 Consulting Template Kit packages public-safe statements of work, engagement
 letters, invoices, project briefs, proposal emails, and technical-writing
